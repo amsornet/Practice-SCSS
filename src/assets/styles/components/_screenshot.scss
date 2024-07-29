@@ -1,0 +1,41 @@
+.screenshot {
+  display: flex;
+  flex-direction: column;
+
+  @media ($tablet) {
+    flex-direction: row;
+  }
+
+  &__image {
+    @include img();
+
+    height: 15rem;
+
+
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+
+    @media ($tablet) {
+      flex-shrink: 0;
+      width: 20rem;
+      margin-bottom: 0;
+    }
+
+  }
+
+  &__text {
+    margin-top: -0.5rem;
+
+  }
+
+  &__title {
+    @include h3();
+    margin-bottom: 0.2rem;
+
+  }
+
+  &__description {
+    @include p1();
+  }
+
+}

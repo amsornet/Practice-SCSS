@@ -14,7 +14,7 @@
     font-size: 2rem;
     margin-bottom: 1rem;
     margin-top: 2rem;
-    text-decoration: underline;
+    //text-decoration: underline;
 }
 
 .h1 {
@@ -27,4 +27,16 @@
 
 .h3 {
     @include h3();
+}
+
+.p1 {
+    @include p1();
+}
+
+.p2 {
+    @include p2();
+}
+
+.lead {
+    @include lead();
 }
