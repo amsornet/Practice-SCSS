@@ -40,3 +40,7 @@
 .lead {
     @include lead();
 }
+
+.button {
+    @extend  %button;
+}
