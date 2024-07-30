@@ -1,7 +1,7 @@
 .stage {
   @include section();
 
-  padding-inline: 1.5rem;
+
 
   background-color: $primaryColor;
 
@@ -14,9 +14,7 @@
       justify-content: space-between;
     }
 
-    @media ($desktop) {
-      padding-inline: 0;
-    }
+
   }
 
   &__title {
@@ -42,14 +40,17 @@
     margin-bottom: 2rem;
 
     @media ($tablet) {
+      flex-shrink: 0;
       max-width: 300px;
+      margin-left: 4rem;
       margin-bottom: 0;
     }
 
     @media ($desktop) {
+      flex-shrink: 0;
       max-width: 469px;
+      margin-left: 8rem;
       margin-bottom: 0;
-
     }
   }
 }

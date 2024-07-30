@@ -57,6 +57,11 @@
 @mixin section($pt: 5rem, $pb: 5rem) {
   padding-top: $pt;
   padding-bottom: $pb;
+  padding-inline: 1.5rem;
+
+  @media ($desktop) {
+    padding-inline: 0;
+  }
 }
 
 %input {
