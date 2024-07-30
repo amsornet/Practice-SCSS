@@ -3,11 +3,11 @@
   color: $color;
   font-family: $mainFont;
   text-shadow: $mainShadow;
-  margin-bottom: 3rem;
+  margin-bottom: 1.8rem;
 
   @media ($tablet) {
     font-size: 4rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
   }
 }
 
@@ -52,6 +52,11 @@
   object-fit: cover;
   object-position: center;
   background-color: $bg;
+}
+
+@mixin section($pt: 5rem, $pb: 5rem) {
+  padding-top: $pt;
+  padding-bottom: $pb;
 }
 
 %input {
