@@ -1,0 +1,14 @@
+.soc1al {
+  &__icon {
+    font-family: $iconFont;
+    font-size: 6rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: $textColor;
+
+    &:hover {
+      color: darken($white, 20%);
+    }
+  }
+
+}

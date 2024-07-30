@@ -45,11 +45,30 @@
 
 }
 
+
+
 @mixin img($bg: $primaryColor) {
   width: 100%;
   object-fit: cover;
   object-position: center;
   background-color: $bg;
+}
+
+%input {
+  color: $secondaryColor;
+  font-size: 1.6rem;
+  background-color: $white;
+  padding: 1.4rem 1rem;
+  line-height: 1;
+  border: none;
+  border-radius: .5rem;
+}
+
+%textarea {
+  @extend %input;
+
+  resize: none;
+  height: 7rem;
 
 }
 

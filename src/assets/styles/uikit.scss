@@ -44,3 +44,11 @@
 .button {
     @extend  %button;
 }
+
+.input {
+    @extend %input;
+}
+
+.textarea {
+    @extend %textarea;
+}
