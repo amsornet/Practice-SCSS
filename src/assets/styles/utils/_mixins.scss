@@ -17,6 +17,7 @@
   text-align: $align;
   line-height: 1.2;
   margin-bottom: 3rem;
+  font-weight: normal;
 }
 
 @mixin h3($color: $primaryColor) {
@@ -59,7 +60,7 @@
   padding-bottom: $pb;
   padding-inline: 1.5rem;
 
-  @media ($desktop) {
+  @media ($projector) {
     padding-inline: 0;
   }
 }
