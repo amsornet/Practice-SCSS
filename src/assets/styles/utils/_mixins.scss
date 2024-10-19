@@ -73,6 +73,10 @@
   line-height: 1;
   border: none;
   border-radius: .5rem;
+
+  &::placeholder {
+    color:  $secondaryColor;
+  }
 }
 
 %textarea {
@@ -80,6 +84,7 @@
 
   resize: none;
   height: 7rem;
+  font-family: $mainFont;
 
 }
 

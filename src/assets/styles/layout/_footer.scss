@@ -24,13 +24,23 @@
     flex-direction: column;
     align-items: stretch;
 
+
+    margin-bottom: 4rem;
+    margin-right: 4.6rem;
+
     @media ($desktop) {
       flex-basis: 50rem;
+      margin-bottom: 0;
+      align-items: stretch;
     }
+
+
   }
 
   &__input {
     @extend %input;
+
+    flex: 1 1 auto;
 
     margin-bottom: 2.1rem;
   }
@@ -39,6 +49,54 @@
     @extend %textarea;
 
     margin-bottom: 2.1rem;
+  }
+
+  &__submit {
+    @extend %button;
+
+    align-self: center;
+  }
+
+  &__contacts-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media ($desktop) {
+      align-items: flex-start;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.2rem;
+  }
+
+  &__link-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: $white;
+
+    margin-bottom: 1.8rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    img {
+      display: block;
+      margin-right: 0.5rem;
+      width: 2.5rem;
+      aspect-ratio: 1;
+    }
+
+    span {
+      @include p1($white);
+
+    }
   }
 
   &__copyright {
